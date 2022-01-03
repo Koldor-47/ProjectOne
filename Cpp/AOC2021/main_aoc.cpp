@@ -11,6 +11,7 @@ int main(int, char**) {
     std::vector<int> things = readTxt_to_int("../Day1_data.txt");
     
     day1puzzle1(things);
+    day1Puzzle2(things);
 }
 
 
