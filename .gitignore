@@ -1,0 +1,3 @@
+#ignore all Logs
+*.log
+build/
