@@ -4,7 +4,7 @@
 #include <vector>
 
 
-void day1puzzle1(std::vector<int>);
-void day1Puzzle2(std::vector<int>);
+void day1puzzle1(std::vector<int>&);
+void day1Puzzle2(std::vector<int>&);
 
 #endif
