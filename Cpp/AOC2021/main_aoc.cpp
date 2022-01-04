@@ -22,8 +22,11 @@ int main(int, char**) {
     day2puzzle1(day2_data);
     day2puzzle2(day2_data);
 
-    std::cin;
+    do {
+        std::cout << "Press Any Key to finsh...." << std::endl;
+    } while (std::cin.get() != '\n');
 
+    return 0;
 }
 
 std::vector<std::string> readTxt(std::string filePath) {
