@@ -18,7 +18,7 @@ int main(int, char**) {
 
     // Day 2
 
-    std::vector<std::string> day2_data = readTxt("../day2/day22_data_test.txt");
+    std::vector<std::string> day2_data = readTxt("../day2/day2_data.txt");
     day2puzzle1(day2_data);
     day2puzzle2(day2_data);
 
