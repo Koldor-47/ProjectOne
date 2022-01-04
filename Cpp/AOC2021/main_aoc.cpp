@@ -22,6 +22,8 @@ int main(int, char**) {
     day2puzzle1(day2_data);
     day2puzzle2(day2_data);
 
+    std::cin;
+
 }
 
 std::vector<std::string> readTxt(std::string filePath) {
