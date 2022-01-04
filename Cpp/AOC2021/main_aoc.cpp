@@ -3,13 +3,14 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "day1.h"
+#include "day1/day1.h"
+#include "day2/day2.h"
 
 std::vector<int> readTxt_to_int(std::string filePath);
 
 
 int main(int, char**) {
-    std::vector<int> things = readTxt_to_int("/home/koldor/Code/Project/ProjectOne/Cpp/AOC2021/Day1_data.txt");
+    std::vector<int> things = readTxt_to_int("/home/koldor/Code/Project/ProjectOne/Cpp/AOC2021/day1/Day1_data.txt");
     day1puzzle1(things);
     day1Puzzle2(things);
 
