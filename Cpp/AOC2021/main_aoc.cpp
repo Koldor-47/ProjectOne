@@ -12,13 +12,13 @@ std::vector<std::string> readTxt(std::string filePath);
 int main(int, char**) {
     //day 1
 
-    std::vector<int> day1_data = readTxt_to_int("/home/koldor/Code/Project/ProjectOne/Cpp/AOC2021/day1/Day1_data.txt");
+    std::vector<int> day1_data = readTxt_to_int("../day1/Day1_data.txt");
     day1puzzle1(day1_data);
     day1Puzzle2(day1_data);
 
     // Day 2
 
-    std::vector<std::string> day2_data = readTxt("/home/koldor/Code/Project/ProjectOne/Cpp/AOC2021/day2/day22_data_test.txt");
+    std::vector<std::string> day2_data = readTxt("../day2/day22_data_test.txt");
     day2puzzle1(day2_data);
     day2puzzle2(day2_data);
 
