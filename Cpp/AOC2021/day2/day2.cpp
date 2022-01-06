@@ -36,5 +36,32 @@ std::cout << "Day 2 - Puzzle 1 --> " << position * depth << std::endl;
 }
 void day2puzzle2(std::vector<std::string>& inData) 
 {
+    int aim = 0;
+    int horizontal_pos = 0;
+    int depth = 0;
 
+    for (std::string line : inData) {
+        std::vector<std::string> instruction = splitOn(line, " ");
+
+        std::string direction = instruction[0];
+        int amount = std::stoi(instruction[1]);
+
+        if (direction == "down") {
+            aim += amount;
+            std::cout << "hi" << std::endl;
+        }
+        else if (direction == "up") {
+            aim -= amount;
+            std::cout << "hi" << std::endl;
+        }
+        else if (direction == "forward") {
+            horizontal_pos += amount;
+            std::cout << "hi" << std::endl;
+            depth = amount * aim;
+        } 
+    }
+
+    int plannedCourse = horizontal_pos * depth;
+
+    std::cout << "horizontal Pos " << horizontal_pos << " depth " << depth << std::endl;
 }
