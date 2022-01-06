@@ -42,8 +42,9 @@ std::vector<std::string> splitOn(std::string inputString, std::string delimitor)
     
     while (inputString.find(delimitor) != -1){
         std::string word;
-        word.resize(inputString.size());
         int startOfDelimitor = inputString.find(delimitor);
+        word.resize(startOfDelimitor);
+        
         std::copy_n(inputString.begin(), startOfDelimitor, word.begin());
         inputString = inputString.substr(startOfDelimitor + delimitor.size(), inputString.size());
         outData.push_back(word);

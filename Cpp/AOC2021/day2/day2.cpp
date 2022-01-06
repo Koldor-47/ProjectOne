@@ -3,6 +3,7 @@
 #include "day2.h"
 
 
+
 void day2puzzle1(std::vector<std::string>& inData)
 {
     int position = 0;
@@ -48,20 +49,17 @@ void day2puzzle2(std::vector<std::string>& inData)
 
         if (direction == "down") {
             aim += amount;
-            std::cout << "hi" << std::endl;
         }
         else if (direction == "up") {
             aim -= amount;
-            std::cout << "hi" << std::endl;
         }
         else if (direction == "forward") {
             horizontal_pos += amount;
-            std::cout << "hi" << std::endl;
-            depth = amount * aim;
+            depth += amount * aim;
         } 
     }
 
     int plannedCourse = horizontal_pos * depth;
 
-    std::cout << "horizontal Pos " << horizontal_pos << " depth " << depth << std::endl;
+    std::cout << "Day 2 - Puzzle 2 --> " << plannedCourse << std::endl;
 }

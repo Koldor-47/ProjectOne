@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include "utils.h"
+#include "../utils/utils.h"
 
 
 void day2puzzle1(std::vector<std::string>&);
