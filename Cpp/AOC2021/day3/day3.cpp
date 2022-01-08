@@ -33,9 +33,23 @@ void day3puzzle1(std::vector<std::string> day3_data) {
 
 void day3puzzle2(std::vector<std::string> day3_data) {
     
+    day3_data = sortNUmber(day3_data, "1");
+
+    for (int i = 0; i < day3_data.size(); i++){
+        std::cout << day3_data[i][0] << std::endl;
+    }
+
+
 }
 
-int mostCommonBit(std::vector<std::string> colOfBits) {
+std::vector<std::string> sortNUmber(std::vector<std::string> inPut_data, std::string MostCommon){
+    std::iterator it = inPut_data.begin();
+
+
+    return inPut_data;   
+}
+
+int mostCommonBit(std::vector<std::string> colOfBits, bool mostCommon) {
     
     for (int i = 0; i < colOfBits[i].size(); i++) {
         int Ones =0;
@@ -51,8 +65,18 @@ int mostCommonBit(std::vector<std::string> colOfBits) {
         if (Ones > Zeros) {
             return 1;
 
-        } else {
+        } else if (Ones < Zeros) {
             return 0;
+        } else if (Ones == Zeros) {
+            if (mostCommon) {
+                return 1;
+            } else {
+                return 0;
+            }
+        } else {
+            return 99;
         }
+    
     }
+    return 99;
 }
