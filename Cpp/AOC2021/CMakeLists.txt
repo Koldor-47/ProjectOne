@@ -4,16 +4,18 @@ project(AOC2021 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-include_directories(day1 day2 utils)
-link_directories(day1 day2 utils)
+include_directories(day1 day2 day3 utils)
+link_directories(day1 day2 day3 utils)
 
 add_subdirectory(day1)
 add_subdirectory(day2)
+add_subdirectory(day3)
 add_subdirectory(utils)
 
 add_executable(AOC2021 main_aoc.cpp )
 target_link_libraries(${PROJECT_NAME} day1)
 target_link_libraries(${PROJECT_NAME} day2)
+target_link_libraries(${PROJECT_NAME} day3)
 target_link_libraries(${PROJECT_NAME} utils)
 
 set(BUILD_SHARED_LIBS)
