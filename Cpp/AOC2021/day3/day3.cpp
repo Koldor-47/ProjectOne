@@ -33,28 +33,25 @@ void day3puzzle1(std::vector<std::string> day3_data) {
 
 void day3puzzle2(std::vector<std::string> day3_data) {
     
-    day3_data = sortNUmber(day3_data, "1", 0);
+    day3_data = sortNUmber(day3_data, '1', 2);
 
     std::cout << "sortNumber Above\n\n";
 
-    for (size_t i = 0; i < day3_data.size(); i++){
-        std::cout << day3_data[i][0] << std::endl;
-    }
 
 
 }
 
-std::vector<std::string> sortNUmber(std::vector<std::string> inPut_data, std::string MostCommon, size_t numPos){
-    std::string test;
+std::vector<std::string> sortNUmber(std::vector<std::string> inPut_data, const char MostCommon, size_t numPos){
     std::vector<std::string>::iterator it = inPut_data.begin();
-    while ()
-    it + 3;
+    std::string binNumber;
+    while (it != inPut_data.end()) {
+        binNumber = *it;
+        if (binNumber[numPos] == MostCommon) {
+            std::cout << "hi" << std::endl;
+        }
+        it++;
 
-    test = *it;
-
-    std::cout << test[0] << std::endl;
-    std::cout << *it << std::endl;
-    std::cout << "test\n";
+    }
 
     return inPut_data;   
 }
