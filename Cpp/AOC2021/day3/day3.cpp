@@ -25,26 +25,36 @@ void day3puzzle1(std::vector<std::string> day3_data) {
         }
     }
 
-    int eRate = std::stoull(epsilonRate, 0, 2);
-    int gRate = std::stoull(gammRate, 0, 2);
+    size_t eRate = std::stoull(epsilonRate, 0, 2);
+    size_t gRate = std::stoull(gammRate, 0, 2);
 
     std::cout << "Day 3 - Puzzle 1 --> " << eRate * gRate << std::endl;
 }
 
 void day3puzzle2(std::vector<std::string> day3_data) {
     
-    day3_data = sortNUmber(day3_data, "1");
+    day3_data = sortNUmber(day3_data, "1", 0);
 
-    for (int i = 0; i < day3_data.size(); i++){
+    std::cout << "sortNumber Above\n\n";
+
+    for (size_t i = 0; i < day3_data.size(); i++){
         std::cout << day3_data[i][0] << std::endl;
     }
 
 
 }
 
-std::vector<std::string> sortNUmber(std::vector<std::string> inPut_data, std::string MostCommon){
-    std::iterator it = inPut_data.begin();
+std::vector<std::string> sortNUmber(std::vector<std::string> inPut_data, std::string MostCommon, size_t numPos){
+    std::string test;
+    std::vector<std::string>::iterator it = inPut_data.begin();
+    while ()
+    it + 3;
 
+    test = *it;
+
+    std::cout << test[0] << std::endl;
+    std::cout << *it << std::endl;
+    std::cout << "test\n";
 
     return inPut_data;   
 }
