@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Cpp",
-    "\\Cpp\\AOC2021",
-    "\\Cpp\\AOC2021\\day3",
-    "\\Cpp\\AOC2021\\utils"
+    "\\Python",
+    "\\Python\\data",
+    "\\Python\\Day 3",
+    "\\Python\\day1"
   ],
-  "SelectedNode": "\\Cpp\\AOC2021\\day3\\day3.cpp",
   "PreviewInSolutionExplorer": false
 }
